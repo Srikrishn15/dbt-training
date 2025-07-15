@@ -4,10 +4,12 @@ o.ordersellingprice - o.ordercostprice as orderprofit,
 o.ordercostprice,
 o.ordersellingprice,
 c.customerid,
+c.customername,
 c.segment,
 c.country,
 p.category,
 p.productname,
+p.productid,
 p.subcategory
 from {{ ref('raw_order') }} as o
 left join {{ ref('raw_customer') }} as c

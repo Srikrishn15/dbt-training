@@ -1,4 +1,6 @@
-select o.orderid, o.orderdate,
+select
+
+o.orderid, o.orderdate,
 o.shipdate, o.shipmode,
 o.ordersellingprice - o.ordercostprice as orderprofit,
 o.ordercostprice,
